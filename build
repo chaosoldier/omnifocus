@@ -1,0 +1,6 @@
+python -m py_compile plugin.py
+rm -fr ../${PWD##*/}build.bundle/
+cp -ir ../${PWD##*/}/ ../${PWD##*/}build/
+rm ../${PWD##*/}build/build
+rm ../${PWD##*/}build/.DS_Store
+mv ../${PWD##*/}build/ ../${PWD##*/}build.bundle/
